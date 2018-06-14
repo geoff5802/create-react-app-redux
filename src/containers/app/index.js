@@ -1,6 +1,6 @@
-import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import About from '../about';
+const React = require('react');
+const { Route, Link } = require('react-router-dom');
+const About = require('../about');
 const Home = require('../home/container');
 
 const App = () => (
@@ -17,4 +17,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+module.exports = App;
