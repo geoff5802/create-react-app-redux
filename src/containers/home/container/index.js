@@ -1,4 +1,4 @@
-const { push } = require('react-router-redux');
+const { push } = require('connected-react-router');
 
 const {
   increment,
