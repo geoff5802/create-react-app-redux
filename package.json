@@ -1,35 +1,37 @@
 {
-  "name": "create-react-app-redux",
-  "version": "0.1.0",
   "private": true,
+  "homepage": "https://create-react-app-redux.now.sh",
   "devDependencies": {
-    "husky": "^0.14.3",
-    "lint-staged": "^7.0.0",
-    "prettier": "^1.11.0",
-    "react-scripts": "^1.0.17"
+    "prettier": "^1.14.3",
+    "react-scripts": "1.1.5"
   },
   "dependencies": {
+    "connected-react-router": "4.5.0",
     "keymirror": "^0.1.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.6",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-router-redux": "next",
-    "redux": "^3.7.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0",
-    "sanitize.css": "^5.0.0"
+    "redux-thunk": "^2.3.0",
+    "sanitize.css": "^7.0.3",
+    "serve": "10.0.2"
   },
   "scripts": {
+    "deploy": "now && now alias",
     "start": "react-scripts start",
+    "now-start": "serve -s ./build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "precommit": "pretty-quick --staged"
   },
-  "homepage": "https://cra-redux-router-thunk.herokuapp.com",
-  "lint-staged": {
-    "*.{js,json,css,md}": ["prettier --write", "git add"]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
